@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using tareaBase.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<tareaBaseContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("tareaBaseContext") ?? throw new InvalidOperationException("Connection string 'tareaBaseContext' not found.")));
 
 var app = builder.Build();
 
