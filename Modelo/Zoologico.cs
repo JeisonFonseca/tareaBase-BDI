@@ -4,10 +4,10 @@
     {
         public int id { get; set; }
 
-        public string? pais { get; set; }
-        public string? nombre { get; set; }
-        public string? telefono { get; set; }
-        public string? sitioWeb { get; set; }
+        public string? Pais { get; set; }
+        public string? Nombre { get; set; }
+        public string? Telefono { get; set; }
+        public string? SitioWeb { get; set; }
 
     }
 }

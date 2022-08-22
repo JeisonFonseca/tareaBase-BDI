@@ -8,3 +8,5 @@ create table InformacionZoo(
 	telefono varchar (15),
 	sitioWeb varchar (20)
 )
+
+ALTER TABLE tablename AUTO_INCREMENT = 1

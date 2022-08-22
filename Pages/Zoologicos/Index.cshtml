@@ -2,28 +2,28 @@
 @model tareaBase.Pages.Zoologicos.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Índice";
 }
 
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Crear nuevo zoologico</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Zoologico[0].pais)
+                @Html.DisplayNameFor(model => model.Zoologico[0].Pais)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Zoologico[0].nombre)
+                @Html.DisplayNameFor(model => model.Zoologico[0].Nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Zoologico[0].telefono)
+                @Html.DisplayNameFor(model => model.Zoologico[0].Telefono)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Zoologico[0].sitioWeb)
+                @Html.DisplayNameFor(model => model.Zoologico[0].SitioWeb)
             </th>
             <th></th>
         </tr>
@@ -32,16 +32,16 @@
 @foreach (var item in Model.Zoologico) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.pais)
+                @Html.DisplayFor(modelItem => item.Pais)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.nombre)
+                @Html.DisplayFor(modelItem => item.Nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.telefono)
+                @Html.DisplayFor(modelItem => item.Telefono)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.sitioWeb)
+                @Html.DisplayFor(modelItem => item.SitioWeb)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.id">Edit</a> |

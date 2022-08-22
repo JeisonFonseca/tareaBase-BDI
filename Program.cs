@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using tareaBase.Modelo;
+
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using tareaBase.Data;
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,13 @@ builder.Services.AddDbContext<tareaBaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("tareaBaseContext") ?? throw new InvalidOperationException("Connection string 'tareaBaseContext' not found.")));
 
 var app = builder.Build();
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -28,3 +37,10 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+
+
+  
+// tutorial-https://docs.microsoft.com/en-us/aspnet/core/tutorials/choose-web-ui?view=aspnetcore-6.0
+ 
+

@@ -2,10 +2,10 @@
 @model tareaBase.Pages.Zoologicos.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar";
 }
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
 <h4>Zoologico</h4>
 <hr />
@@ -15,34 +15,34 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Zoologico.id" />
             <div class="form-group">
-                <label asp-for="Zoologico.pais" class="control-label"></label>
-                <input asp-for="Zoologico.pais" class="form-control" />
-                <span asp-validation-for="Zoologico.pais" class="text-danger"></span>
+                <label asp-for="Zoologico.Pais" class="control-label"></label>
+                <input asp-for="Zoologico.Pais" class="form-control" />
+                <span asp-validation-for="Zoologico.Pais" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Zoologico.nombre" class="control-label"></label>
-                <input asp-for="Zoologico.nombre" class="form-control" />
-                <span asp-validation-for="Zoologico.nombre" class="text-danger"></span>
+                <label asp-for="Zoologico.Nombre" class="control-label"></label>
+                <input asp-for="Zoologico.Nombre" class="form-control" />
+                <span asp-validation-for="Zoologico.Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Zoologico.telefono" class="control-label"></label>
-                <input asp-for="Zoologico.telefono" class="form-control" />
-                <span asp-validation-for="Zoologico.telefono" class="text-danger"></span>
+                <label asp-for="Zoologico.Telefono" class="control-label"></label>
+                <input asp-for="Zoologico.Telefono" class="form-control" />
+                <span asp-validation-for="Zoologico.Telefono" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Zoologico.sitioWeb" class="control-label"></label>
-                <input asp-for="Zoologico.sitioWeb" class="form-control" />
-                <span asp-validation-for="Zoologico.sitioWeb" class="text-danger"></span>
+                <label asp-for="Zoologico.SitioWeb" class="control-label"></label>
+                <input asp-for="Zoologico.SitioWeb" class="form-control" />
+                <span asp-validation-for="Zoologico.SitioWeb" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Volver</a>
 </div>
 
 @section Scripts {
