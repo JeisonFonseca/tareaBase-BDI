@@ -9,6 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using tareaBase.Data;
 using tareaBase.Modelo;
 
+/**
+ * Encargado de la logica de editar un nuevo zoologico 
+*/
 namespace tareaBase.Pages.Zoologicos
 {
     public class EditModel : PageModel

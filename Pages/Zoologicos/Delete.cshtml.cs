@@ -8,6 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using tareaBase.Data;
 using tareaBase.Modelo;
 
+
+/**
+ * Encargado de la logica de eliminar un nuevo zoologico 
+*/
 namespace tareaBase.Pages.Zoologicos
 {
     public class DeleteModel : PageModel

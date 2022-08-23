@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using tareaBase.Data;
 using tareaBase.Modelo;
 
+/**
+ * Encargado de la logica de crear un nuevo zoologico 
+*/
 namespace tareaBase.Pages.Zoologicos
 {
     public class CreateModel : PageModel

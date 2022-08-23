@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using tareaBase.Data;
 using tareaBase.Modelo;
 
+/**
+ * Encargado de la logica de mostrar un nuevo zoologico 
+*/
 namespace tareaBase.Pages.Zoologicos
 {
     public class DetailsModel : PageModel

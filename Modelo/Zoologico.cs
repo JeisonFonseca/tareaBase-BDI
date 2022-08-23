@@ -1,4 +1,12 @@
-﻿namespace tareaBase.Modelo
+﻿/**
+ *  Clase zoologico
+ *  @params: id - integer
+ *  @params: pais - string
+ *  @params: Nombre - string
+ *  @params: Telefono - string
+ *  @params: SitioWeb - string
+ */
+namespace tareaBase.Modelo
 {
     public class Zoologico
     {

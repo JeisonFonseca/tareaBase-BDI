@@ -2,6 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using tareaBase.Modelo;
 
+/**
+ * Clase encargada de generar datos para la BD
+ */
 namespace tareaBase.Modelo
 {
     public static class SeedData
@@ -14,7 +17,7 @@ namespace tareaBase.Modelo
             {
                 if (context == null || context.Zoologico == null)
                 {
-                    throw new ArgumentNullException("Null CryptoDemoContext");
+                    throw new ArgumentNullException("Null tareaBaseContext");
                 }
 
 
